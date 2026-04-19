@@ -3,17 +3,14 @@ import { LoginPage } from '../PageObjects/LoginPage';
 
 export class LoginSteps {
   private loginPage: LoginPage;
-
   constructor(private page: Page) {
     this.loginPage = new LoginPage(page);
   }
-
   async launchURL(env: string, links: any) {
     await test.step('Launch application', async () => {
       await this.page.goto(links[env]);
     });
   }
-
   async login(testData: any, password: string) {
     await test.step('Enter username', async () => {
       await this.loginPage.enterUsername(testData.validUser.username);

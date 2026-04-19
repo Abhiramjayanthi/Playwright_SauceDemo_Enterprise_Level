@@ -1,5 +1,14 @@
 {
   "validUser": {
     "username": "standard_user"
+  },
+  "Products":[
+    "Sauce Labs Backpack",
+    "Test.allTheThings() T-Shirt (Red)"
+  ],
+  "customerDetails": {
+    "firstName": "Abhiram",
+    "lastName": "Jayanthi",
+    "postCode": "600097"
   }
 }
